@@ -1,2 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/dist/css/bootstrap.css";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item.disabled .page-link {
+  pointer-events: none;
+  color: grey;
+}
+
+.page-item.active .page-link {
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+}
+
+.page-link {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}

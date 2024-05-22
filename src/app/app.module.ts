@@ -8,6 +8,7 @@ import { ClassDirective } from './class.directive';
   declarations: [
     AppComponent,
     ClassDirective
+
   ],
   imports: [
     BrowserModule
