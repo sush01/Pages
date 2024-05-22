@@ -29,3 +29,13 @@ nav.page-link {
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
 }
+
+.full-screen-image {
+  display: block;
+  max-width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  margin: 0 auto; 
+  border: 2px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(236, 27, 27, 0.1); 
+}

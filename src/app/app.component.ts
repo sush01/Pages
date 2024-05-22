@@ -38,7 +38,17 @@ images =[
       url: `https://images.unsplash.com/photo-1623609163859-ca93c959b98a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRyZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60`
     }
 ]
+changePage(page: number) {
+  if (page >= 0 && page < this.images.length) {
+    this.currentPage = page;
+  }
+}
+
+
+
 checkWindowIndex(index: number){
+
+  
   return Math.abs(this.currentPage - index) < 5;
 }
 }

@@ -15,13 +15,13 @@
     <li class="page-item"
     [ngClass]= "{ disabled: currentPage === images.length -1 }">
       <a class="page-link" (click)="currentPage = currentPage + 1" > Next</a>
-     </li> 
+    </li> 
   </ul>
 </nav>
 
 <div>
   <h4>{{images[currentPage].title}}</h4>
-  <img [src]="images[currentPage].url">
+  <img [src]="images[currentPage].url " alt="{{ images[currentPage].title }}" class="full-screen-image">
 </div>
 
 
